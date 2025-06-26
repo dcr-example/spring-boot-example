@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+
+<mapper namespace="org.example.dao.mapper.UserMapper" > <!-- 命名空间,这里是接口的引用,方便面向接口编程,如果是第一种方法可以随意; -->
+
+    <select id="queryById" parameterType="java.lang.Long" resultType="User" >
+        select * from t_user where id = #{id}
+    </select>
+
+    <select id="queryList" parameterType="java.util.Map" resultType="User" >
+        select * from t_user
+        <where>
+            <if test="userName != null">
+                and user_name = #{userName}
+            </if>
+            <if test="nickName != null">
+                and nick_name = #{nickName}
+            </if>
+            <if test="userPwd != null">
+                and user_pwd = #{userPwd}
+            </if>
+        </where>
+    </select>
+
+    <insert id="add" parameterType="User">
+        insert into t_user(nick_name, user_name, user_pwd) values(#{nickName}, #{userName}, #{userPwd})
+    </insert>
+
+    <delete id="remove" parameterType="java.lang.Long">
+        delete from t_user where id = #{id}
+    </delete>
+
+</mapper>

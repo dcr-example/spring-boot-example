@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+
+<mapper namespace="org.example.dao.mapper.DemoMapper" > <!-- 命名空间,这里是接口的引用,方便面向接口编程,如果是第一种方法可以随意; -->
+
+    <select id="queryById" parameterType="java.lang.Long" resultType="Demo" >
+        select * from t_demo where id = #{id}
+    </select>
+
+    <select id="queryList" parameterType="java.util.Map" resultType="Demo" >
+        select * from t_demo
+    </select>
+
+    <insert id="add" parameterType="Demo">
+        insert into t_demo(name, age) values(#{name}, #{age})
+    </insert>
+
+    <delete id="remove" parameterType="java.lang.Long">
+        delete from t_demo where id = #{id}
+    </delete>
+
+</mapper>
