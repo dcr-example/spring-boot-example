@@ -13,31 +13,30 @@ import java.util.Date;
 import java.util.Map;
 
 public class ApiWebUtils {
-    static final String SYSTEM_CURRENT_TIME_MILLIS = "systemCurrentTimeMillis";
-    static final String SYSTEM_CURRENT_DATE_TIME = "systemCurrentDateTime";
-    public static ModelAndView getModelAndView(HttpServletRequest request, HttpServletResponse response, Map<String, Object> resultMap, String viewName){
 
-        Date nowTime = new Date();
-        resultMap.put(SYSTEM_CURRENT_DATE_TIME, nowTime);
-        resultMap.put(SYSTEM_CURRENT_TIME_MILLIS, nowTime.getTime());
-        ModelAndView modelAndView = new ModelAndView(viewName, resultMap);
-        return modelAndView;
+    public static String writeSuccess(){
+        return write(ApiResultCode.SUCCESS);
     }
-
-
-    public static void write(HttpServletResponse response, JSONObject bean){
-        String result = JSON.toJSONString(bean);
-        try {
-            response.setContentType("text/html;charset=utf-8");
-//            response.getWriter().print(SecureUtil.encode_moble(result, key, iv));
-            response.getWriter().print(result);
-            response.getWriter().flush();
-            response.getWriter().close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public static String writeSuccess(Object data){
+        return write(ApiResultCode.SUCCESS, data, null);
+    }
+    public static String writeError(){
+        return write(ApiResultCode.ERROR);
+    }
+    public static String writeError(String msg){
+        return write(ApiResultCode.ERROR, msg);
+    }
+    public static String write(ApiResultCode resultCode){
+        return JSON.toJSONString(new ApiResultData(resultCode, null, null));
+    }
+    public static String write(ApiResultCode resultCode, Object data){
+        return JSON.toJSONString(new ApiResultData(resultCode, data, null));
+    }
+    public static String write(ApiResultCode resultCode, String msg){
+        return JSON.toJSONString(new ApiResultData(resultCode, null, msg));
+    }
+    public static String write(ApiResultCode resultCode, Object data, String msg){
+        return JSON.toJSONString(new ApiResultData(resultCode, data, msg));
     }
 
     public static final String SESSION_INFO = "session_info";
@@ -48,10 +47,6 @@ public class ApiWebUtils {
     }
     public static void remove_session_user_info(HttpServletRequest request){
         request.getSession().removeAttribute(SESSION_USER_INFO);
-    }
-
-    public static HttpSession get_session_info(HttpServletRequest request){
-        return request.getSession();
     }
     public static User get_session_user_info(HttpServletRequest request){
         Object userObj = request.getSession().getAttribute(SESSION_USER_INFO);

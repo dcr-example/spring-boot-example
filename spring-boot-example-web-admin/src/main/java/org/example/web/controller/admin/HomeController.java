@@ -26,7 +26,7 @@ public class HomeController {
         log.warn("demo日志级别：warn！");
         log.error("demo日志级别：error！");
         Map<String, Object> resultMap = new HashMap<String, Object>();
-        System.out.println("HomeController->list()");
+        log.debug("{}->list()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "home/index");
     }
 }

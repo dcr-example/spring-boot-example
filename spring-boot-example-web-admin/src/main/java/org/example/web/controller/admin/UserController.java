@@ -6,6 +6,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.example.model.User;
 import org.example.service.UserService;
 import org.example.web.utils.AdminWebUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Description;
 import org.springframework.stereotype.Controller;
@@ -19,6 +21,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+    private final static Logger log = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     private UserService userService;
@@ -32,7 +35,7 @@ public class UserController {
 
         resultMap.put("dataList", userService.queryList(resultMap));
 
-        System.out.println("UserController->list()");
+        log.debug("{}->list()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "user/list");
     }
     @RequestMapping("/detail/{id}")
@@ -42,7 +45,7 @@ public class UserController {
         String page_title = "用户-详情页";
         resultMap.put("page_title", page_title);
         resultMap.put("dataObject", userService.queryById(id));
-        System.out.println("UserController->detail()");
+        log.debug("{}->detail()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "user/detail");
     }
 
@@ -52,7 +55,7 @@ public class UserController {
         Map<String, Object> resultMap = new HashMap<String, Object>();
         String page_title = "用户-新增页面";
         resultMap.put("page_title", page_title);
-        System.out.println("UserController->add()");
+        log.debug("{}->add()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "user/add");
     }
     @RequestMapping("/save")
@@ -75,7 +78,7 @@ public class UserController {
         resultMap.put("page_title", page_title);
         resultMap.put("page_result", page_result);
         resultMap.put("page_result_title", page_result ? "操作成功" : "操作失败");
-        System.out.println("UserController->save()");
+        log.debug("{}->save()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "user/result");
     }
     @RequestMapping("/remove/{id}")
@@ -93,7 +96,7 @@ public class UserController {
         resultMap.put("page_title", page_title);
         resultMap.put("page_result", page_result);
         resultMap.put("page_result_title", page_result ? "操作成功" : "操作失败");
-        System.out.println("UserController->remove()");
+        log.debug("{}->remove()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "user/result");
     }
 

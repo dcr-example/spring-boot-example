@@ -5,6 +5,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.example.model.User;
 import org.example.service.UserService;
 import org.example.web.utils.AdminWebUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Description;
 import org.springframework.stereotype.Controller;
@@ -18,6 +20,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/login")
 public class LoginController {
+    private final static Logger log = LoggerFactory.getLogger(LoginController.class);
 
     @Autowired
     private UserService userService;
@@ -27,7 +30,7 @@ public class LoginController {
         Map<String, Object> resultMap = new HashMap<String, Object>();
         String page_title = "系统-登录页";
         resultMap.put("page_title", page_title);
-        System.out.println("LoginController->index()");
+        log.debug("{}->index()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "login/index");
     }
     @RequestMapping("/in")
@@ -45,7 +48,7 @@ public class LoginController {
         resultMap.put("page_title", page_title);
         resultMap.put("page_result", page_result);
         resultMap.put("page_result_title", page_result ? "登录成功" : "登录失败, 用户名或密码错误！");
-        System.out.println("LoginController->in()");
+        log.debug("{}->in()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "login/result");
     }
     @RequestMapping("/out")
@@ -58,7 +61,7 @@ public class LoginController {
         resultMap.put("page_result", page_result);
         AdminWebUtils.remove_session_user_info(request);
         resultMap.put("page_result_title", "退出成功");
-        System.out.println("LoginController->out()");
+        log.debug("{}->out()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "login/result");
     }
 }

@@ -6,6 +6,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.example.model.Demo;
 import org.example.service.DemoService;
 import org.example.web.utils.AdminWebUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Description;
 import org.springframework.stereotype.Controller;
@@ -19,6 +21,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/demo")
 public class DemoController {
+    private final static Logger log = LoggerFactory.getLogger(DemoController.class);
 
     @Autowired
     private DemoService demoService;
@@ -31,7 +34,7 @@ public class DemoController {
 
         resultMap.put("dataList", demoService.queryList(resultMap));
 
-        System.out.println("DemoController->list()");
+        log.debug("{}->list()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "demo/list");
     }
     @RequestMapping("/detail/{id}")
@@ -41,7 +44,7 @@ public class DemoController {
         String page_title = "示例-详情页";
         resultMap.put("page_title", page_title);
         resultMap.put("dataObject", demoService.queryById(id));
-        System.out.println("DemoController->detail()");
+        log.debug("{}->detail()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "demo/detail");
     }
 
@@ -51,7 +54,7 @@ public class DemoController {
         Map<String, Object> resultMap = new HashMap<String, Object>();
         String page_title = "示例-新增页面";
         resultMap.put("page_title", page_title);
-        System.out.println("DemoController->add()");
+        log.debug("{}->add()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "demo/add");
     }
     @RequestMapping("/save")
@@ -74,7 +77,7 @@ public class DemoController {
         resultMap.put("page_title", page_title);
         resultMap.put("page_result", page_result);
         resultMap.put("page_result_title", page_result ? "操作成功" : "操作失败");
-        System.out.println("DemoController->save()");
+        log.debug("{}->save()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "demo/result");
     }
     @RequestMapping("/remove/{id}")
@@ -93,7 +96,7 @@ public class DemoController {
         resultMap.put("page_title", page_title);
         resultMap.put("page_result", page_result);
         resultMap.put("page_result_title", page_result ? "操作成功" : "操作失败");
-        System.out.println("DemoController->remove()");
+        log.debug("{}->remove()", this.getClass().getName());
         return AdminWebUtils.getModelAndView(request, response, resultMap, "demo/result");
     }
 

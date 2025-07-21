@@ -1,0 +1,66 @@
+server:
+  port: 8083
+
+
+spring:
+  application:
+    name: apiApplication
+#  web:
+#    cors:
+#      allowed-origins-patterns:
+  profiles:
+    #对应参数（dev:开发环境、local:本地环境、prod:生产环境、test:测试环境）
+    #设置对应环境的参数时可以加载对应配置文件
+    active: dev
+
+---
+# datasource start
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:54323/test
+    username: postgres
+    password: postgres
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      auto-commit: true
+  # datasource end
+
+---
+# jpa start
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+# jpa end
+
+---
+# mybatis start
+mybatis:
+  #持久层接口对应sql文件目录
+  mapper-locations: classpath*:mapper/*.xml
+  #表对应实体类包路径
+  type-aliases-package: org.example.model
+  #下划线转托峰命名
+  configuration:
+    map-underscore-to-camel-case: true
+# mybatis end
+
+---
+#logging start
+logging:
+  file:
+    path: /home/usr/local/temp/logs
+  logback:
+    rollingpolicy:
+      max-size: 1MB
+      max-history: 30
+      total-size-cap: 1GB
+#logging end

@@ -10,7 +10,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class AdminWebConfig implements WebMvcConfigurer {
-
     private static Logger logger = LoggerFactory.getLogger(AdminWebConfig.class);
     /**
      * 注册拦截器

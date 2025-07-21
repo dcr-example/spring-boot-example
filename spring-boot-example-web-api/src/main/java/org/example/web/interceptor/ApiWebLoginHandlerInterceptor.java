@@ -2,9 +2,12 @@ package org.example.web.interceptor;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.example.web.utils.ApiResultCode;
 import org.example.web.utils.ApiWebUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.io.IOException;
 
 public class ApiWebLoginHandlerInterceptor implements HandlerInterceptor {
 
@@ -15,10 +18,20 @@ public class ApiWebLoginHandlerInterceptor implements HandlerInterceptor {
      * */
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("WebLoginHandlerInterceptor->preHandle()");
-//        if(ApiWebUtils.get_session_user_info(request) == null){
-//            response.sendRedirect("/login/index");
-//            return false;
-//        }
+        if(ApiWebUtils.get_session_user_info(request) == null){
+            try {
+//                response.setStatus(200);
+                response.setContentType("text/html;charset=utf-8");
+                response.getWriter().print(ApiWebUtils.write(ApiResultCode.ERR_NOT_LOGIN));
+                response.getWriter().flush();
+                response.getWriter().close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return false;
+        }
         return true;
     }
 
