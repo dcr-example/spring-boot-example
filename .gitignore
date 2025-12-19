@@ -33,8 +33,5 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
-/.idea/
+/vue-demo/node_modules/
+/vue-demo/dist/

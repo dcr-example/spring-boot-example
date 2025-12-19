@@ -18,7 +18,7 @@ spring:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:54323/test
+    url: jdbc:postgresql://localhost:5432/test
     username: postgres
     password: postgres
     hikari:
@@ -72,7 +72,7 @@ mybatis-plus:
 #logging start
 logging:
   file:
-    path: /home/usr/local/temp/logs
+    path: F:\Windows\tmp\logs
   logback:
     rollingpolicy:
       max-size: 1MB

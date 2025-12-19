@@ -14,7 +14,7 @@
 
     <!-- 配置日志属性，值来源于application.yml/application.properties，需设置默认值， -->
     <springProperty scope="context" name="APPLICATION_NAME" source="spring.application.name" defaultValue="WebApplication"/>
-    <springProperty scope="context" name="LOG_PATH" source="logging.file.path" defaultValue="/home/usr/local/temp/logs"/>
+    <springProperty scope="context" name="LOG_PATH" source="logging.file.path" defaultValue="F:\Windows\tmp\logs"/>
     <springProperty scope="context" name="LOG_FILE_MAX_SIZE" source="logging.logback.rollingpolicy.max-size" defaultValue="1MB"/>
     <springProperty scope="context" name="LOG_FILE_MAX_HISTORY" source="logging.logback.rollingpolicy.max-history" defaultValue="3"/>
     <springProperty scope="context" name="LOG_FILE_TOTAL_SIZE" source="logging.logback.rollingpolicy.total-size-cap" defaultValue="24MB"/>
