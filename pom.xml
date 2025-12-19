@@ -13,8 +13,10 @@
         <project-groupId>org.example</project-groupId>
         <project-artifactId>spring-boot-example</project-artifactId>
         <project-version>1.0-SNAPSHOT</project-version>
-        <mybatis-spring-boot-version>3.0.4</mybatis-spring-boot-version>
+        <mybatis-spring-version>3.0.5</mybatis-spring-version>
+        <mybatis-plus-spring-boot-version>3.5.12</mybatis-plus-spring-boot-version>
         <spring-boot-version>3.4.5</spring-boot-version>
+        <postgresql-version>42.7.5</postgresql-version>
     </properties>
 
     <groupId>${project-groupId}</groupId>

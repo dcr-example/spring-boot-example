@@ -89,19 +89,37 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 # jpa end
 
+#---
+## mybatis start
+#mybatis:
+#  #持久层接口对应sql文件目录
+#  mapper-locations: classpath*:mapper/**/*.xml
+#  #表对应实体类包路径
+#  type-aliases-package: org.example.model
+#  #下划线转托峰命名
+#  configuration:
+#    map-underscore-to-camel-case: true
+## mybatis end
+#
+#---
+
+
 ---
-# mybatis start
-mybatis:
+# mybatis-plus start
+mybatis-plus:
   #持久层接口对应sql文件目录
-  mapper-locations: classpath*:mapper/*.xml
+  mapper-locations: classpath*:mapper/**/*.xml
   #表对应实体类包路径
   type-aliases-package: org.example.model
   #下划线转托峰命名
   configuration:
     map-underscore-to-camel-case: true
-# mybatis end
+    auto-mapping-behavior: full
 
+# mybatis-plus end
 ---
+
+
 #logging start
 logging:
   file:

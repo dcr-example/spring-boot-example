@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+
+<!-- 命名空间,这里是接口的引用,方便面向接口编程,如果是第一种方法可以随意; -->
+<mapper namespace="org.example.dao.mapper.system.SysUserDeptPostMapper" >
+
+
+
+</mapper>

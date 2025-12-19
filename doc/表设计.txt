@@ -1,0 +1,90 @@
+用户表:	
+	sys_user:  编号、用户名、密码、盐、照片、头像、手机号、Token、帐号状态（正常、禁用）、员工状态（在职、离职）、创建时间、更新时间
+	
+权限表:
+	sys_auth: 编号、编码、权限名称、路径、类型（目录/菜单/按钮/链接）、图标、上级编号、层级（默认1级）、状态（正常、禁用）、创建时间、更新时间
+	
+角色表:
+	sys_role: 编号、编码、角色名称、创建时间、更新时间
+	
+组织表:
+	sys_dept: 编号、编码、组织名称、图标、上级编号、层级（默认1级）、状态（正常、禁用）、创建时间、更新时间
+	
+职位表:
+	sys_post:编号、职位名称、创建时间、更新时间
+	
+角色-权限关系表: 多对多
+	sys_role_auth: 编号、角色编号、权限编号、创建时间
+
+用户-角色关系表: 多对多
+	sys_user_role: 编号、用户编号、角色编号、创建时间
+	
+职位-角色关系表: 多对多
+	sys_post_role: 编号、职位编号、角色编号、创建时间
+
+组织-职位关系表: 多对多
+	sys_dept_post: 编号、组织编号、职位编号、创建时间
+	
+用户-组织-职位关系表: 多对多
+	sys_user_post_role: 编号、用户编号、组织编号、职位编号、是否主职位、创建时间
+	
+	
+	
+	create table sys_user
+(
+    id             bigserial          not null,
+    user_name      varchar(20)        not null,
+    user_pwd       varchar(50)        not null,
+    salt           varchar(20)        not null,
+    token          varchar(50),
+    iphone         varchar(20),
+    email          varchar(50),
+    address        varchar(100),
+    photo          varchar(100),
+    profile        varchar(100),
+    account_status smallint default 0 not null,
+    staff_status   smallint default 0 not null,
+    create_time    timestamp          not null,
+    update_time    timestamp
+
+);
+
+comment on table sys_user is '系统_用户表';
+comment on column sys_user.id is '编号';
+comment on column sys_user.user_name is '用户名';
+comment on column sys_user.user_pwd is '密码';
+comment on column sys_user.salt is '盐';
+comment on column sys_user.token is 'token';
+comment on column sys_user.iphone is '手机号';
+comment on column sys_user.address is '住址';
+comment on column sys_user.email is '邮箱';
+comment on column sys_user.photo is '照片';
+comment on column sys_user.profile is '头像';
+comment on column sys_user.account_status is '帐号状态{0: 正常；1：禁用}';
+comment on column sys_user.staff_status is '员工状态{0: 在职；1：离职}';
+comment on column sys_user.create_time is '创建时间';
+comment on column sys_user.update_time is '更新时间';
+
+create table sys_auth
+(
+    id          bigserial          not null,
+    code        varchar(20)        not null,
+    name        varchar(20)        not null,
+    path        varchar(200),
+    icon        varchar(20),
+    level       smallint default 1 not null,
+    parent_id   smallint default 1 not null,
+    auth_type   smallint default 0 not null,
+    auth_status smallint default 0 not null,
+    create_time timestamp          not null,
+    update_time timestamp
+
+);
+
+comment on table  sys_auth is '系统_用户表';
+comment on column sys_auth.id is '编号';
+comment on column sys_auth.auth_type is '权限类型 {{0: 目录；1：菜单；2：按钮；3：链接}}';
+comment on column sys_auth.auth_status is '权限状态{0: 正常；1：禁用}';
+comment on column sys_auth.create_time is '创建时间';
+comment on column sys_auth.update_time is '更新时间';
+

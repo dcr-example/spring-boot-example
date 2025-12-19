@@ -5,47 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97e2f24-42bf-46d3-b460-bbc017edd283" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/controller/api/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/controller/api/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/controller/api/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/utils/ApiResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/utils/ApiResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/utils/ApiResultStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/fl_bid.BOYstA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/fl_bid.BOYstA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/fl_bid.BOYstA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/fl_bid.BOYstA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/fl_bid.BOYstA/schema/public.abK9xQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/test.kkQ2AA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/test.kkQ2AA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/表设计.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/IBaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysAuthMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysDeptPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysPostRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysRoleAuthMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysUserDeptPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/IBaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysAuthRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysDeptPostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysDeptRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysPostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysPostRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysRoleAuthRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysUserDeptPostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/system/SysUserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysAuthMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysDeptPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysPostRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysRoleAuthMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysUserDeptPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system/sysUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysDeptPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysPostRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysRoleAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysUserDeptPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/system/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysAuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysDeptPostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysDeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysPostRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysPostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysRoleAuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysUserDeptPostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/system/SysUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/IBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysDeptPostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysPostRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysPostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysRoleAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysUserDeptPostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-example-service/src/main/java/org/example/service/system/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/807af074-64a6-40ca-999e-06e3a3cf7a66.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-example-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/DemoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/DemoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/demoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/demoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-example-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-model/src/main/java/org/example/model/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-service-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl/DemoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-example-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/AdminWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/AdminWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/config/AdminWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/config/AdminWebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/DemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/controller/admin/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/filter/AdminWebFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/filter/AdminWebFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/resolver/AdminErrorViewResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/resolver/AdminErrorViewResolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/public/welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/public/welcome/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/ApiWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/ApiWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/config/ApiWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/config/ApiWebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/filter/ApiWebFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/filter/ApiWebFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/interceptor/ApiWebLoginHandlerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/interceptor/ApiWebLoginHandlerInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/resolver/ApiErrorViewResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/utils/ApiWebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example/web/utils/ApiWebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-example-web-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +102,7 @@
       <list>
         <option value="HTML File" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,58 +116,54 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../usr/local/java/maven/apache-maven-3.9.9" />
+        <option name="customMavenHome" value="$USER_HOME$/usr/local/java/maven/apache-maven-3.9.9" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="17" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2yR33D03BxKtn3ZvY7k97KWDsl8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/yll/projects/learning/java/spring/spring-boot-example/spring-boot-example-web-admin/src/main/resources/public/error&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/yll/projects/learning/java/spring/spring-boot-example/spring-boot-example-common/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.testRunning&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;656d8ad40495ed4998ccefdcd157676b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Project/Coding/spring-boot-example",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "656d8ad40495ed4998ccefdcd157676b",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-boot-example-service-impl/src/main/java/org/example/service/impl" />
+      <recent name="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper/system" />
+      <recent name="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper/system" />
+      <recent name="$PROJECT_DIR$/spring-boot-example-dao/src/main/java/org/example/dao/mapper" />
       <recent name="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/public/error" />
-      <recent name="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/resources/templates/error" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/spring-boot-example-web-api/src/main/java/org/example" />
-      <recent name="$PROJECT_DIR$/spring-boot-example-dao/src/main/resources/mapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spring-boot-example-web-admin/src/main/java/org/example/web/resolver" />
@@ -134,10 +176,11 @@
       <recent name="org.example.web.config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.dao.repository.system" />
+      <recent name="org.example.model.system" />
+      <recent name="org.example.model.sys" />
       <recent name="org.example.web.controller.api" />
       <recent name="org.example.web.utils" />
-      <recent name="org.example" />
-      <recent name="org.example.web.interceptor.admin" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ApiWebApplication">
@@ -189,13 +232,24 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApiResultData" />
         <item itemvalue="Spring Boot.AdminWebApplication" />
+        <item itemvalue="Application.ApiResultData" />
         <item itemvalue="Spring Boot.AdminWebApplication (1)" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26574.91" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26574.91" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a97e2f24-42bf-46d3-b460-bbc017edd283" name="Changes" comment="" />
@@ -227,6 +281,17 @@
       <workItem from="1752656324342" duration="1402000" />
       <workItem from="1752730259425" duration="9518000" />
       <workItem from="1752812856787" duration="6166000" />
+      <workItem from="1753232979010" duration="1860000" />
+      <workItem from="1753261746976" duration="938000" />
+      <workItem from="1753774270907" duration="8464000" />
+      <workItem from="1753842022880" duration="2048000" />
+      <workItem from="1753844808798" duration="4467000" />
+      <workItem from="1753875595982" duration="3220000" />
+      <workItem from="1753937823294" duration="5023000" />
+      <workItem from="1755058899241" duration="1333000" />
+      <workItem from="1755062718074" duration="1054000" />
+      <workItem from="1755078636673" duration="11000" />
+      <workItem from="1766138094352" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -246,6 +311,12 @@
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="519" y="90" key="FileChooserDialogImpl" timestamp="1755060148021">
+      <screen x="0" y="0" width="1920" height="1039" />
+    </state>
+    <state x="519" y="90" key="FileChooserDialogImpl/0.0.1920.1039@0.0.1920.1039" timestamp="1755060148021" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -258,7 +329,7 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
-        <PinnedItemInfo parentTag="org.apache.catalina.connector.RequestFacade" memberName="request" />
+        <PinnedItemInfo />
       </pinned-members>
     </pin-to-top-manager>
   </component>
